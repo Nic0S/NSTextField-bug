@@ -10,8 +10,10 @@
 		22BB2FB31B9B78AE009197E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BB2FB21B9B78AE009197E0 /* AppDelegate.m */; };
 		22BB2FB51B9B78AE009197E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BB2FB41B9B78AE009197E0 /* main.m */; };
 		22BB2FB71B9B78AE009197E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BB2FB61B9B78AE009197E0 /* Images.xcassets */; };
-		22BB2FBA1B9B78AE009197E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BB2FB81B9B78AE009197E0 /* MainMenu.xib */; };
 		22BB2FC61B9B78AE009197E0 /* TextField_bugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BB2FC51B9B78AE009197E0 /* TextField_bugTests.m */; };
+		22BB2FD21B9B7927009197E0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22BB2FD11B9B7927009197E0 /* icon.png */; };
+		22BB2FD41B9B79A9009197E0 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22BB2FD31B9B79A9009197E0 /* CustomView.xib */; };
+		22BB2FD81B9B79F7009197E0 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22BB2FD61B9B79F7009197E0 /* CustomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +33,13 @@
 		22BB2FB21B9B78AE009197E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22BB2FB41B9B78AE009197E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		22BB2FB61B9B78AE009197E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		22BB2FB91B9B78AE009197E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		22BB2FBF1B9B78AE009197E0 /* TextField-bugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TextField-bugTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BB2FC41B9B78AE009197E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22BB2FC51B9B78AE009197E0 /* TextField_bugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextField_bugTests.m; sourceTree = "<group>"; };
+		22BB2FD11B9B7927009197E0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		22BB2FD31B9B79A9009197E0 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		22BB2FD51B9B79F7009197E0 /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		22BB2FD61B9B79F7009197E0 /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +81,14 @@
 		22BB2FAE1B9B78AE009197E0 /* TextField-bug */ = {
 			isa = PBXGroup;
 			children = (
+				22BB2FD01B9B791B009197E0 /* Assets */,
 				22BB2FB11B9B78AE009197E0 /* AppDelegate.h */,
 				22BB2FB21B9B78AE009197E0 /* AppDelegate.m */,
 				22BB2FB61B9B78AE009197E0 /* Images.xcassets */,
-				22BB2FB81B9B78AE009197E0 /* MainMenu.xib */,
 				22BB2FAF1B9B78AE009197E0 /* Supporting Files */,
+				22BB2FD31B9B79A9009197E0 /* CustomView.xib */,
+				22BB2FD51B9B79F7009197E0 /* CustomViewController.h */,
+				22BB2FD61B9B79F7009197E0 /* CustomViewController.m */,
 			);
 			path = "TextField-bug";
 			sourceTree = "<group>";
@@ -109,6 +117,14 @@
 				22BB2FC41B9B78AE009197E0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22BB2FD01B9B791B009197E0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				22BB2FD11B9B7927009197E0 /* icon.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BB2FB71B9B78AE009197E0 /* Images.xcassets in Resources */,
-				22BB2FBA1B9B78AE009197E0 /* MainMenu.xib in Resources */,
+				22BB2FD41B9B79A9009197E0 /* CustomView.xib in Resources */,
+				22BB2FD21B9B7927009197E0 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BB2FB51B9B78AE009197E0 /* main.m in Sources */,
+				22BB2FD81B9B79F7009197E0 /* CustomViewController.m in Sources */,
 				22BB2FB31B9B78AE009197E0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,17 +250,6 @@
 			targetProxy = 22BB2FC01B9B78AE009197E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		22BB2FB81B9B78AE009197E0 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22BB2FB91B9B78AE009197E0 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		22BB2FC71B9B78AE009197E0 /* Debug */ = {

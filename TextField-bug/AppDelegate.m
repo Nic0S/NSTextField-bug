@@ -16,7 +16,22 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    _statusItem.title = @"";
+    _statusItem.image = [NSImage imageNamed:@"icon.png"];
+    
+    _statusItem.alternateImage = [NSImage imageNamed:@"icon.png"];
+    
+    _statusItem.highlightMode = YES;
+    
+    NSMenu* menu = [[NSMenu alloc] init];
+    CustomViewController *c = [[CustomViewController alloc] initWithNibName:@"CustomView" bundle:nil];
+    NSMenuItem* item = [[NSMenuItem alloc] init];
+    [item setView:[c view]];
+    [menu addItem:item];
+    
+    [_statusItem setMenu:menu];
+
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
